@@ -2,10 +2,10 @@
 @section('titulo')
     Sistema Menus    
 @endsection
-{{-- 
+
 @section("scripts")
 <script src="{{asset("assets/pages/scripts/admin/menu/crear.js")}}" type="text/javascript"></script>
-@endsection --}}
+@endsection
 
 @section('contenido')
     <div class="row">

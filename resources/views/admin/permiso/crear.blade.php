@@ -1,6 +1,6 @@
 @extends("theme.$theme.layout")
 @section('titulo')
-    Permisos    
+    Crear Permisos    
 @endsection
 
 @section('contenido')

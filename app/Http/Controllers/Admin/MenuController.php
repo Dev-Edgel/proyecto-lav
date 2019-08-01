@@ -16,7 +16,7 @@ class MenuController extends Controller
      */
     public function index()
     {
-        //
+        dd("hola");
     }
 
     /**
@@ -38,7 +38,7 @@ class MenuController extends Controller
     public function guardar(ValidacionMenu $request)
     {
         Menu::create($request->all());
-        return redirect('admin/menu/crear')->with('mensaje', 'Menú actualizado con éxito');
+        return redirect('admin/menu/crear')->with('mensaje', 'Menú creado con éxito');
     }
 
     /**
@@ -72,7 +72,7 @@ class MenuController extends Controller
      */
     public function actualizar(Request $request, $id)
     {
-        //
+        return redirect('admin/menu')->with('mensaje', 'Menú actualizado con éxito');
     }
 
     /**

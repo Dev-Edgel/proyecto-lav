@@ -17,9 +17,13 @@
         <!-- AdminLTE Skins. Choose a skin from the css/skins
             folder instead of downloading all of them to reduce the load. -->
         <link rel="stylesheet" href="{{asset("assets/$theme/dist/css/skins/_all-skins.min.css")}}">
-        <link rel="stylesheet" href="{{asset("assets/css/custom.css")}}">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
 
         @yield('style')
+        
+        <link rel="stylesheet" href="{{asset("assets/css/custom.css")}}">
+
 
         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -47,10 +51,10 @@
                     @yield('contenido')
                 </section>
             </div>
-        </div>
-        <!--Iinicio Footer-->
-        @include("theme/$theme/footer")
-        <!--Fin Footer-->
+            <!--Iinicio Footer-->
+            @include("theme/$theme/footer")
+            <!--Fin Footer-->
+        </div>        
         <!-- jQuery 3 -->
         <script src="{{asset("assets/$theme/bower_components/jquery/dist/jquery.min.js")}}"></script>
         <!-- Bootstrap 3.3.7 -->
@@ -62,8 +66,10 @@
         <!-- AdminLTE App -->
         <script src="{{asset("assets/$theme/dist/js/adminlte.min.js")}}"></script>
         <!-- AdminLTE for demo purposes -->
-        <script src="{{asset("assets/$theme/dist/js/demo.js")}}"></script>
-
+        <script src="{{asset("assets/js/jquery-validation/jquery.validate.min.js")}}"></script>
+        <script src="{{asset("assets/js/jquery-validation/localization/messages_es.min.js")}}"></script>
+        <script src="{{asset("assets/js/scripts.js")}}"></script>
+        <script src="{{asset("assets/js/funciones.js")}}"></script>
         @yield('scripts')
     </body>
 </html>
