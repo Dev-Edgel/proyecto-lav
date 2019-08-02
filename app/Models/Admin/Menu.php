@@ -14,6 +14,7 @@ class Menu extends Model
     {
         return $this->belongsToMany(Rol::class, 'menu_rol');
     }
+    
     public function getHijos($padres, $line)
     {
         $children = [];
