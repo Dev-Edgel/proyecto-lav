@@ -68,6 +68,8 @@
         @yield("scriptsPlugins")
         <script src="{{asset("assets/js/jquery-validation/jquery.validate.min.js")}}"></script>
         <script src="{{asset("assets/js/jquery-validation/localization/messages_es.min.js")}}"></script>
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
         <script src="{{asset("assets/js/scripts.js")}}"></script>
         <script src="{{asset("assets/js/funciones.js")}}"></script>
         @yield('scripts')
