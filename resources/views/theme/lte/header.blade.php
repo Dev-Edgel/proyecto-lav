@@ -30,7 +30,7 @@
                       <li><!-- start message -->
                         <a href="#">
                           <div class="pull-left">
-                            <img src="{{asset("assets/$theme/dist/img/user2-160x160.jpg")}}" class="img-circle" alt="User Image">
+                            <img src="{{asset("assets/$theme/dist/img/edgar-fot.png")}}" class="img-circle" alt="User Image">
                           </div>
                           <h4>
                             Support Team
@@ -101,17 +101,17 @@
               <!-- User Account: style can be found in dropdown.less -->
               <li class="dropdown user user-menu">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                  <img src="{{asset("assets/$theme/dist/img/user2-160x160.jpg")}}" class="user-image" alt="User Image">
+                  <img src="{{asset("assets/$theme/dist/img/edgar-fot.png")}}" class="user-image" alt="User Image">
                   <span class="hidden-xs">Hola, {{session()->get('nombre_usuario') ?? 'Invitado'}}</span>
                 </a>
                 <ul class="dropdown-menu">
                   <!-- User image -->
                   <li class="user-header">
-                    <img src="{{asset("assets/$theme/dist/img/user2-160x160.jpg")}}" class="img-circle" alt="User Image">
+                    <img src="{{asset("assets/$theme/dist/img/edgar-fot.png")}}" class="img-circle" alt="User Image">
     
                     <p>
-                      Alexander Pierce - Web Developer
-                      <small>Member since Agos. 2019</small>
+                      Edgar Mamani Gutiérrez - Web Developer
+                      <small>Mienbro desde Agos. 2019</small>
                     </p>
                   </li>
                   <!-- Menu Body -->
