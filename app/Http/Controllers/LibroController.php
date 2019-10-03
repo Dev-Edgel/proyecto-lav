@@ -16,6 +16,11 @@ class LibroController extends Controller
     {
         //dd(session()->all());
         can('listar-libros');
+        // Cache::put('prueba', 'Esto es un dato en cache');
+        // dd(Cache::get('prueba'));
+        // Cache::tags(['permiso'])->put('permiso.1', ['listar-libros', 'crear-libros']);
+        // dd(Cache::tags('permiso')->get('permiso.1'));
+        // Cache::tags(['permiso'])->flush();
         $datas = Libro::orderBy('id')->get();
         return view('libro.index', compact('datas'));
     }
