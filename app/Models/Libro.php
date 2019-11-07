@@ -24,6 +24,8 @@ class Libro extends Model
                 $constraint->upsize();
             });
             Storage::disk('public')->put("imagenes/caratulas/$imageName", $imagen->stream());
+            // $dropbox = Storage::disk('dropbox')->getDriver()->getAdapter()->getClient();
+            // $response = $dropbox->createSharedLinkWithSettings("imagenes/caratulas/$imageName", ["requested_visibility" => "public"]);
             return $imageName;
         } else {
             return false;
