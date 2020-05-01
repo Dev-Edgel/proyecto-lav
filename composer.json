@@ -17,6 +17,7 @@
         "spatie/flysystem-dropbox": "^1.2"
     },
     "require-dev": {
+        "barryvdh/laravel-debugbar": "^3.3",
         "beyondcode/laravel-dump-server": "^1.0",
         "facade/ignition": "^1.4",
         "facade/ignition-code-editor": "^1.0",
