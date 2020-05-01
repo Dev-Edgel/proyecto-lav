@@ -8,7 +8,7 @@
         <img src="{{asset("assets/$theme/dist/img/edgar-fot.png")}}" class="img-circle" alt="User Image">
       </div>
       <div class="pull-left info">
-        <p>Edgar Mamani Gutiérrez</p>
+        <p>{{ session()->get('nombre_usuario', 'Invitado') }}</p>
         <a href="#"><i class="fa fa-circle text-success"></i>En línea</a>
       </div>
     </div>
