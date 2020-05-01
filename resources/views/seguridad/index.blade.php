@@ -34,6 +34,11 @@
         <!-- /.login-logo -->
         <div class="login-box-body">
             <p class="login-box-msg">Inicio su session</p>
+            @if (session('status'))
+                <div class="alert alert-success" role="alert">
+                    {{ session('status') }}
+                </div>
+            @endif
             @if ($errors->any())
                 <div class="alert alert-danger alert-dismissible">
                     <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
@@ -55,14 +60,22 @@
                     <span class="glyphicon glyphicon-lock form-control-feedback"></span>
                 </div>
                 <div class="row">
-                    <div class="col-xs-8"></div>
+                    <div class="col-xs-7"></div>
                     <!-- /.col -->
-                    <div class="col-xs-4">
-                        <button type="submit" class="btn btn-primary btn-block btn-flat">Login</button>
+                    <div class="col-xs-5">
+                        <button type="submit" class="btn btn-primary btn-block btn-flat">Iniciar sesión</button>
                     </div>
                     <!-- /.col -->
                 </div>
             </form>
+            <div class="social-auth-links text-center mb-3"></div>
+            <p class="mb-1">
+                @if (Route::has('password.request'))
+                <a class="btn btn-link" href="{{ route('password.request') }}">
+                    {{ __('Forgot Your Password?') }}
+                </a>
+                @endif
+            </p>
         </div>
         <!-- /.login-box-body -->
     </div>
