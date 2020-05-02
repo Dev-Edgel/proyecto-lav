@@ -8,15 +8,16 @@ Libros Prestados
     <div class="col-lg-12">
         @csrf
         @include('includes.mensaje')
-        <div class="card card-info">
-            <div class="card-header">
-                <h3 class="card-title">Libros prestados</h3>
-                <div class="card-tools">
+        <div class="box">
+            <div class="box-header with-border">
+                <h3 class="box-title">Libros prestados</h3>
+                <div class="box-tools pull-right">
+                    <a href="{{route('libro-prestamo.crear')}}" class="btn btn-block btn-success btn-sm">
                         <i class="fa fa-fw fa-plus-circle"></i> Prestar nuevo libro
                     </a>
                 </div>
             </div>
-            <div class="card-body table-responsive p-0">
+            <div class="box-body">
                 <table class="table table-striped table-bordered table-hover" id="tabla-data">
                     <thead>
                         <tr>
@@ -37,6 +38,7 @@ Libros Prestados
                             <td>{{$data->usuario->nombre}}</td>
                             <td>{{$data->prestado_a}}</td>
                             <td>{{$data->fecha_prestamo}}</td>
+                            <td>{{$data->fecha_devolucion ?? 'Prestado'}}</td>
                             <td></td>
                         </tr>
                         @endforeach
