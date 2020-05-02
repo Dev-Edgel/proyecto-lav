@@ -13,7 +13,7 @@
         @include('includes.mensaje')
         <div class="box box-success">
             <div class="box-header with-border">
-                <h3 class="box-title">Menús - Rol</h3>
+                <h3 class="box-title">Permiso - Rol</h3>
             </div>
             <div class="box-body">
                 @csrf
