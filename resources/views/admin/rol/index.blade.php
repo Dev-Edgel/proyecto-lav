@@ -34,7 +34,7 @@ Roles
                         <tr>
                             <td>{{$data->id }}</td>
                             <td>{{$data->nombre}}</td>
-                            <td>
+                            <td class="text-center">
                                 <a href="{{route('editar_rol', ['id' => $data->id])}}" class="btn-accion-tabla tooltipsC" title="Editar este registro">
                                     <i class="fa fa-edit"></i>
                                 </a>

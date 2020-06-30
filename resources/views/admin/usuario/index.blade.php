@@ -44,7 +44,7 @@ Usuarios
                                     {{$loop->last ? $rol->nombre : $rol->nombre . ', '}}
                                 @endforeach
                             </td>
-                            <td>
+                            <td class="text-center">
                                 <a href="{{route('editar_usuario', ['id' => $data->id])}}" class="btn-accion-tabla tooltipsC" title="Editar este registro">
                                     <i class="fa fa-edit"></i>
                                 </a>
